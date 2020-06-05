@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <style>
+        html {}
+
+        $color-main: #ff5e57;
+        $color-background: #f0f3f3;
+        $color-text: #444444;
+
+        * {
+            box-sizing: border-box;
+        }
+
+        *:focus {
+            box-shadow: none;
+        }
+
+        body,
+        html {
+            color: $color-text;
+            font-size: 16px;
+            line-height: 1.7;
+            margin: 0;
+            height: 100%;
+        }
+
+        a,
+        a:hover {
+            text-decoration: none;
+            color: $color-main;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .splash {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            padding: 0 24px;
+            background-image: url('https://i.postimg.cc/k4nLHRQY/text-4115131.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center bottom;
+            height: 100vh;
+        }
+
+        .page-intro {
+            margin: auto;
+            text-align: center;
+        }
+
+        .main-title {
+            margin: 0;
+            font-weight: normal;
+            background-color: bisque;
+
+        }
+
+        .main-subtitle {
+            margin: 12px 0 60px 0;
+            font-weight: normal;
+            background-color: #fdcb6e
+        }
+
+        .btn {
+            padding: 18px 24px 18px 24px;
+            font-size: 14px;
+            background-color: $color-main;
+            color: #ffffff;
+        }
+
+        .btn:hover {
+            background-color: darken($color-main, 3%);
+            color: #ffffff;
+        }
+
+    </style>
+</head>
+
+<body>
+    <section class="splash">
+        <div class="page-intro">
+            <h1 class="main-title">Hi, I'm a cat.</h1>
+            <h2 class="main-subtitle">Cat ipsum dolor sit amet</h2>
+            <a class="btn btn-solid" href="#about">Learn more</a>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About me</h2>
+            <p class="section-intro">Push your water glass on the floor toilet paper attack claws fluff everywhere meow miao french ciao litterbox for lick human with sandpaper tongue yet playing with balls of wool but lick master's hand at first then bite because im moody.</p>
+        </div>
+    </section>
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">I enjoy...
+            </h2>
+            <div class="features-wrapper">
+                <article class="feature">
+                    <i class="fas fa-cat">
+
+                    </i>
+                    <h3 class="feature-title">Sleeping</h3>
+                    <p class="feature-decription">See owner, run in terror spot something, big eyes, big eyes, crouch, shake butt, prepare to pounce meow loudly just to annoy owners what a cat-ass-trophy!</p>
+                </article>
+                <article class="feature">
+                    <i class="fas fa-cat">
+
+                    </i>
+                    <h3 class="feature-title">Eating</h3>
+                    <p class="feature-decription">Cats secretly make all the worlds muffins spread kitty litter all over house but plan steps for world domination. Meow to be let out lick face hiss at owner, pee a lot, and meow repeatedly scratch at fence.</p>
+                </article>
+                <article class="feature">
+                    <i class="fas fa-cat">
+
+                    </i>
+                    <h3 class="feature-title">Hunting</h3>
+                    <p class="feature-decription">Eat the rubberband under the bed, for small kitty warm kitty little balls of fur litter kitter kitty litty little kitten big roar roar feed me poop in a handbag look delicious.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
