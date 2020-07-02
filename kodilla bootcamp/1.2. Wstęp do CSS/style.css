@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Open+Sans:wght@300&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
+.hero {
+    background: #222f3e;
+    color: #ffffff;
+    padding: 50px;
+    text-align: center;
+}
+
+section {
+    padding: 36px 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+img {
+    display: inline-block;
+    max-width: 48%;
+}
+
+.info {
+    background: #c8d6e5;
+}
+
+links {
+    color: #ee5253;
+}
