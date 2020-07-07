@@ -51,10 +51,35 @@ section {
     text-decoration: none;
     color: $color-four;
 }
-.navigation a:hover {
+.navigation a:hover, 
+li:hover ul {
     color: $color-two;
+    display: block;
+}
+.navigation ul ul li {
+   display: block;
+    margin-bottom: 12px;
+    color: black
+}
+li ul {
+    display: none;
+    position: absolute;
+    margin: 0 25px;
+    color: black;
+    text-align: center;
+    background-color: $color-four;
+    
+}
+
+a.second-level {
+    color: $color-one;
 }
 /* header */
+header, h1 {
+    background-color: $color-one;
+    color: $color-four;
+    margin:0;
+}
 .creatively {
     font-family: 'Signika', sans-serif;
     font-weight: bold;
