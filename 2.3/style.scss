@@ -14,6 +14,7 @@ $color-five: #ff5252;
 *, *::before, *::after {
     box-sizing: border-box;
 }
+
 body {
     margin: 0;
     font-size: 16px;
@@ -21,11 +22,13 @@ body {
     font-family: 'Inconsolata', monospace;
     color: $color-three
 }
+
 .container {
     max-width: 1140px;
     padding: 0 20px;
     margin: auto;
 }
+
 section {
     padding: 96px 0;
 }
@@ -35,51 +38,61 @@ section {
     background-color: $color-one;
     padding: 12px 0;
 }
+
 .navigation ul {
     padding: 0;
     margin: 0;
     list-style-type: none;
-
 }
+
 .navigation li {
     display: inline-block;
-    margin-right: 36px;
+    margin: 0 18px;
     position: relative;
 
 }
+
 .navigation a {
     text-decoration: none;
     color: $color-four;
 }
+
 .navigation a:hover, 
 li:hover ul {
     color: $color-two;
     display: block;
 }
+
 .navigation ul ul li {
    display: block;
     margin-bottom: 12px;
     color: black
 }
+
 li ul {
     display: none;
     position: absolute;
-    margin: 0 25px;
+    left: 50%;
+    transform: translateX(-50%);
     color: black;
     text-align: center;
     background-color: $color-four;
-    
+    padding-top: 12px;
 }
 
 a.second-level {
     color: $color-one;
+    postion: absolute;
+    
 }
+
 /* header */
 header, h1 {
     background-color: $color-one;
     color: $color-four;
-    margin:0;
+    margin: 0;
 }
+
 .creatively {
     font-family: 'Signika', sans-serif;
     font-weight: bold;
