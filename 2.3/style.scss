@@ -9,7 +9,10 @@ $color-three: #2c2c54;
 $color-four: #ffffff;
 $color-five: #ff5252;
 
+$font-one: 'Inconsolata', monospace;
+$font-two: 'Signika', sans-serif;
 
+$transition: all 1s;
 /* Global */
 *, *::before, *::after {
     box-sizing: border-box;
@@ -19,8 +22,8 @@ body {
     margin: 0;
     font-size: 16px;
     line-height: 1.7;
-    font-family: 'Inconsolata', monospace;
-    color: $color-three
+    font-family: $font-one;
+    color: $color-three;
 }
 
 .container {
@@ -87,13 +90,51 @@ a.second-level {
 }
 
 /* header */
-header, h1 {
+h1, .splash {
     background-color: $color-one;
     color: $color-four;
     margin: 0;
 }
 
+.splash {
+    min-height: 500px;
+    display: flex;
+}
+
 .creatively {
-    font-family: 'Signika', sans-serif;
+    font-family: $font-two;
     font-weight: bold;
+}
+
+.splash-inner {
+    margin: auto;
+    max-width: 70%;
+    
+}
+
+.btn {
+    display: inline-block;
+    min-width: 160px;
+    margin: 24px auto 0 auto;
+    padding: 16px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: $font-one;
+    cursor: pointer;
+    transition: $transition;
+    
+}
+
+.btn-header {
+    border: 2px solid $color-four;
+    color: $color-four;
+    background-color: $color-one;
+    background-image: linear-gradient(90deg, $color-four, 50%, transparent 50%);
+    background-position: 100% 0;
+    background-size: 300%;
+}
+
+.btn:hover {
+    background-position: 0 100%;
+    color: $color-three;
 }
