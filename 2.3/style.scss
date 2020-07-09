@@ -254,9 +254,6 @@ h2 {
     overflow: visible;
     z-index: 10;
 }
-.skill-image:hover {
-    z-index:11;
-}
 
 .skill-image img {
     max-width: 250px;
@@ -287,8 +284,17 @@ h2 {
     transition: 1s;
     z-index: 5;
 }
+
+// nie dziala to ponizej
+.skill-image .skill-image::after:hover {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+//
 .skill-description {
-    //position: relative; 
         p:last-of-type { 
         font-weight: bold;
     }
@@ -322,4 +328,69 @@ h2 {
     .skill-title {
         text-align: center;
     }
+}
+
+/* CONTACT */
+.wrapper {
+    display: flex;
+    max-width: 1140px;
+    margin: auto;
+}
+
+.contact , .sales {
+    background-color: $color-one;
+    text-align: left;
+    color: $color-four;
+}
+.contact {
+    flex: 2 0 0;
+    padding-right: 96px;
+   }
+   
+h2.contact-us {
+    font-size: 48px;
+    font-weight: 700;
+}
+   
+.sales { 
+    flex: 1 0 0;
+}
+
+.contact-sales {
+    background-color: $color-one;
+    padding: 0;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border-bottom: 3px solid $color-four;
+  border-top: $color-one;
+  border-left: $color-one;
+  border-right: $color-one;
+  font-family: $font-one;
+  color: $color-four;
+  background-color: $color-one;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=text]:active,
+input[type=text]:focus,
+input[type=text]:target,
+textarea[id=subject]:active,
+textarea[id=subject]:focus,
+textarea[id=subject]:target {
+    outline: none;
+}
+::placeholder {
+    color: $color-four;
+  }
+
+/* Footer */
+.page-footer {
+    background-color: #242424;
+    color: whitesmoke;
+    margin: 0;
 }
