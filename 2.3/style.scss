@@ -62,7 +62,7 @@ section {
 
 .navigation a:hover, 
 li:hover ul {
-    color: $color-one;
+    color: $color-five;
     display: block;
 }
 
@@ -426,4 +426,47 @@ i.fa, {
 
 i.fa:hover {
     transform: scale(1.2);
+}
+
+/* Media */
+
+@media (max-width: 767px) {
+    .wrapper { 
+        flex-direction: column;
+    }
+    
+    .container-our {
+        flex-direction: column;
+    }
+    
+    .skill-image { 
+        width: 100%;
+        position: relative;
+        height: 300px;
+        justify-content: center;
+    }
+    
+    .skill-image img, .skill-image:after {
+        max-width: 100%;
+    }
+    
+    .skill-left {margin-bottom: 25px;}
+    
+    
+    .skill-left .skill-description {
+        padding: 36px 0; 
+        max-width: 100%;
+    }
+    .skills, .our-services {
+        padding: 25px 5%;
+    }
+    
+    .skills {
+        pointer-events: none;
+    }
+    .contact {padding: 96px 5% 25px 5%;}
+
+    .sales {padding-left: 8%;}
+    
+    .social ul {padding-left: 0;}
 }
