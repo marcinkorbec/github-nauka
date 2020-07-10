@@ -37,6 +37,7 @@ section {
 }
 
 /* Navigation */
+
 .navigation {
     background-color: $color-one;
     padding: 12px 0;
@@ -52,7 +53,6 @@ section {
     display: inline-block;
     margin: 0 18px;
     position: relative;
-
 }
 
 .navigation a {
@@ -86,7 +86,6 @@ li ul {
 a.second-level {
     color: $color-two;
     postion: absolute;
-    
 }
 
 /* header */
@@ -95,6 +94,7 @@ h1, .splash {
     color: $color-four;
     margin: 0;
 }
+
 h1 {
     font-size: 60px;
     line-height: 1;
@@ -130,7 +130,6 @@ h2 {
     font-family: $font-one;
     cursor: pointer;
     transition: $transition;
-    
 }
 
 .btn-header {
@@ -148,6 +147,7 @@ h2 {
 }
 
 /* Our services */
+
 .container h2 {
     font-size: 48px;
     margin: 0 0 72px 0;
@@ -157,6 +157,7 @@ h2 {
     font-size: 24px;
     margin: 0 0 12px 0;
 }
+
 .container h4 {
     display: inline;
 }
@@ -166,6 +167,7 @@ h2 {
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 .box {
     flex: 0 0 33.333%;
     position: relative;
@@ -185,9 +187,11 @@ h2 {
     z-index: -1;
     line-height: 1;
 }
+
 .wrapper p, .skill-description p {
     margin: 0;
 }
+
 .button-1 {
     border: 2px solid $color-two;
     color: $color-two;
@@ -247,6 +251,7 @@ h2 {
 [class^="skill-"] {
     position: relative;
 }
+
 .skill-image {
     position: absolute;
     width: 50%;
@@ -279,21 +284,19 @@ h2 {
     height: 100%;
     top: 20px;
     left: 20px;
+    transform: translate(0, 0);
     background-color: $color-two;
     opacity: 0.3;
     transition: 1s;
     z-index: 5;
 }
 
-// nie dziala to ponizej
-.skill-image .skill-image::after:hover {
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+
+.skill-image:hover:after {
+    top: 0;
+    left: 0;
 }
-//
+
 .skill-description {
         p:last-of-type { 
         font-weight: bold;
@@ -307,9 +310,7 @@ h2 {
     transition: none;
     padding: 0;
 }
-//.skill-image img:hover {
-   // transform: scale(1.2);
-//}
+
 @media (max-width: 468px) {
     .skill-image, 
     .skill-decription {
@@ -331,6 +332,7 @@ h2 {
 }
 
 /* CONTACT */
+
 .wrapper {
     display: flex;
     max-width: 1140px;
@@ -342,6 +344,7 @@ h2 {
     text-align: left;
     color: $color-four;
 }
+
 .contact {
     flex: 2 0 0;
     padding-right: 96px;
@@ -376,6 +379,7 @@ input[type=text], select, textarea {
   margin-bottom: 16px;
   resize: vertical;
 }
+
 input[type=text]:active,
 input[type=text]:focus,
 input[type=text]:target,
@@ -384,6 +388,7 @@ textarea[id=subject]:focus,
 textarea[id=subject]:target {
     outline: none;
 }
+
 ::placeholder {
     color: $color-four;
   }
@@ -393,4 +398,32 @@ textarea[id=subject]:target {
     background-color: #242424;
     color: whitesmoke;
     margin: 0;
+}
+
+.social ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    max-width: 280px;
+    margin: auto;
+    font-size: 0;
+}
+
+i.fa, {
+    width: 60px;
+    line-height: 60px;
+    height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 48px 10px;
+    color: white;
+    display: block;
+    background-color: $color-five;
+    cursor: pointer;
+    font-size: 30px;
+    transition: $transition;
+}
+
+i.fa:hover {
+    transform: scale(1.2);
 }
